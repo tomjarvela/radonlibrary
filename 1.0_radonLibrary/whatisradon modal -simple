@@ -1,0 +1,71 @@
+<div class="modal-body text-center pb-5">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title-->
+                  <h2
+                    class="overlay portfolio-modal-title text-secondary text-uppercase mb-0"
+                  >
+                    What is radon?
+                  </h2>
+                  <!-- Icon Divider-->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+                  <!-- Portfolio Modal - Text-->
+                  <p class="mb-4 text-start h4">
+                    Exposure to radon can cause lung cancer<sup> 1</sup><br />
+                  </p>
+                  <p class="mb-4 text-start h4 text-justify">
+                    Radon is a naturally occurring, radioactive gas that can't
+                    been seen or smelled. The only way to know the level of
+                    radon in your home is through testing.
+                  </p>
+                  <p class="mb-4 text-start h4">
+                    30% of N.H. Homes have elevated levels of radon<sup> 2</sup>
+                  </p>
+
+                  <br />
+                  <button
+                    id="close1_open2"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-check fa-fw"></i>
+                    Get your (free) test kit
+                  </button>
+                  <!-- button to close modal 1 (what is radon) and open modal 2(test). -->
+                  <button
+                    class="btn btn-secondary"
+                    data-target="#portfolioModal2"
+                    data-bs-dismiss="modal"
+                  >
+                    <i class="fas fa-graduation-cap fa-fw"></i>
+                    Learn More
+                  </button>
+                  <p></p>
+                  <p class="mb-4 text-start h6">
+                    <sup>1. </sup>
+                    <a
+                      href="https://www.epa.gov/radiation/what-radon-gas-it-dangerous"
+                      target="blank"
+                      >https://www.epa.gov/radiation/what-radon-gas-it-dangerous</a
+                    ><br />
+                    <sup>2. </sup>
+                    <a
+                      href="https://www.nh.gov/epht/environmental-topics/documents/radon.pdf"
+                      target="blank"
+                      >https://www.nh.gov/epht/environmental-topics/documents/radon.pdf</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

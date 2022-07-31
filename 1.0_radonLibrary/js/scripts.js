@@ -54,7 +54,41 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // custom code
-$("#close1_open2").click(function() {
-    $("#portfolioModal1").modal('hide');
+// opens test modal on page load when #test is in url
+$(document).ready(function () {
+  if (window.location.href.indexOf("#portfolioModal1") != -1) {
+    $("#portfolioModal1").modal("show");
+  }
+});
+
+
+
+
+// these are functions from buttons in modals to hide current modal and open new one. 
+
+
+$("#open2from1").click(function() {
+    $('.modal').modal('hide');
     $("#portfolioModal2").modal('show');
+});
+
+$("#open2from4").click(function() {
+    $('.modal').modal('hide');
+    $("#portfolioModal2").modal('show');
+});
+
+
+$("#open4from2").click(function() {
+    $('.modal').modal('hide');
+    $("#portfolioModal4").modal('show');
+});
+
+$("#open5").click(function() {
+    $('.modal').modal('hide');
+    $("#portfolioModal5").modal('show');
+});
+
+$("#open6").click(function() {
+    $('.modal').modal('hide');
+    $("#portfolioModal6").modal('show');
 });
