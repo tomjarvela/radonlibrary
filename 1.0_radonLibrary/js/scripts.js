@@ -56,8 +56,8 @@ window.addEventListener('DOMContentLoaded', event => {
 // custom code
 // opens test modal on page load when #test is in url
 $(document).ready(function () {
-  if (window.location.href.indexOf("#portfolioModal1") != -1) {
-    $("#portfolioModal1").modal("show");
+  if (window.location.href.indexOf("#test") != -1) {
+    $("test").modal("show");
   }
 });
 
@@ -66,29 +66,66 @@ $(document).ready(function () {
 
 // these are functions from buttons in modals to hide current modal and open new one. 
 
-
+//opens test from what is radon
 $("#open2from1").click(function() {
     $('.modal').modal('hide');
     $("#portfolioModal2").modal('show');
 });
 
+//opens test from resources
 $("#open2from4").click(function() {
     $('.modal').modal('hide');
     $("#portfolioModal2").modal('show');
-});
+}); 
 
-
-$("#open4from2").click(function() {
+//opens resources from what is radon
+$("#open4from1").click(function() {
     $('.modal').modal('hide');
     $("#portfolioModal4").modal('show');
 });
 
-$("#open5").click(function() {
+$("#open3from4").click(function() {
     $('.modal').modal('hide');
-    $("#portfolioModal5").modal('show');
+    $("#portfolioModal3").modal('show');
 });
 
 $("#open6").click(function() {
     $('.modal').modal('hide');
     $("#portfolioModal6").modal('show');
 });
+
+
+$(function () {
+  $('a.remove-item').click(function () {
+    var url = this.href;
+    $('#myModal .btn-danger').click(function () {
+      window.location.href = url;
+    });
+  });
+});
+
+
+
+// redirect after delay
+
+function delayRedirectDHHS(){
+    setTimeout(function() {
+    window.open("https://www.dhhs.nh.gov/programs-services/environmental-health-and-you/radon#:~:text=Testing%20for%20radon%20is%20the%20only%20way%20to%20know%20if%20it%20is%20present%20in%20your%20home.", '_blank');
+
+    },5000);
+}
+
+function delayRedirectARM(){
+    setTimeout(function() {
+    window.open("https://radonh2o.com/contact/", '_blank');
+
+    },5000);
+}
+
+    
+
+
+
+
+
+
